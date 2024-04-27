@@ -12,7 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <title>EDU.COM</title>
 </head>
 <body>
@@ -280,7 +283,117 @@
 
 
 
+    <!-- ===== Testimonals ===== -->
+
+    <section class="container testimonials__container mySwiper">
+        <h2>Student's Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="Images/st2.avif" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Logan West</h5>
+                    <small>Student</small>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere esse voluptatibus libero, incidunt error ratione sequi fugiat nobis debitis quae dolorem veniam odit quo, nisi quos asperiores. Voluptatibus, quasi soluta.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="Images/st5.webp" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Amy Santiago</h5>
+                    <small>Student</small>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere esse voluptatibus libero, incidunt error ratione sequi fugiat nobis debitis quae dolorem veniam odit quo, nisi quos asperiores. Voluptatibus, quasi soluta.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="Images/st4.avif" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Gracie Owens</h5>
+                    <small>Student</small>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere esse voluptatibus libero, incidunt error ratione sequi fugiat nobis debitis quae dolorem veniam odit quo, nisi quos asperiores. Voluptatibus, quasi soluta.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="Images/st5.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Terry Jeffords</h5>
+                    <small>Student</small>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere esse voluptatibus libero, incidunt error ratione sequi fugiat nobis debitis quae dolorem veniam odit quo, nisi quos asperiores. Voluptatibus, quasi soluta.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="Images/st6.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Jake Peralta</h5>
+                    <small>Student</small>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere esse voluptatibus libero, incidunt error ratione sequi fugiat nobis debitis quae dolorem veniam odit quo, nisi quos asperiores. Voluptatibus, quasi soluta.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+
+    <!-- ===== Testimonals ends===== -->
+
+
+
+
     <script src="CSS/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // when window width is >= 600px
+        breakpoints: {
+            600: {
+            slidesPerView: 2,
+            },
+
+        }});
+    </script>
 
 </body>
 </html>
